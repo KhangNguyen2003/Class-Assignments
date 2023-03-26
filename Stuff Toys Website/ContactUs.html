@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Contact Us &#127823</title>
+  <link href="Assets/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="Assets/ContactUs.css" />
+</head>
+
+<body>
+  <h1>Get in touch With Us!</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Main</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="ProductPage.html">Special Offer!</a></li>
+      <li><a href="ContactUs.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="Content">
+    <div class="choose-form-box">
+      <label>Choose the Form that You want to fill</label>
+      <hr>
+      <div class="input-box-styling">
+        <input type="radio" name="forms" value="report">
+        <label>Report an issue</label>
+      </div>
+
+      <div class="input-box-styling">
+        <input type="radio" name="forms" value="review">
+        <label>Review the product</label>
+      </div>
+
+    </div>
+
+    <div class="Content" id="reportForm" style="display:none;">
+      <form action="ReportIssue.html" method="POST">
+        <label>Name:</label>
+        <input type="text" required>
+        <label>Email:</label>
+        <input type="email" required>
+        <label>Issue:</label>
+        <textarea name="comment" form="reportForm" placeholder="Enter the issue you are facing..."></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="Content" id="reviewForm" style="display:none;">
+      <form action="ReviewProduct.html" method="POST">
+        <label>Name:</label>
+        <input type="text" required>
+        <label>Email:</label>
+        <input type="email" required>
+        <label>Review:</label>
+        <textarea name="comment" form="reviewForm" placeholder="Enter your review here..."></textarea>
+        <div class="rateBox">
+          <button class="white-star-button" type="button" data-value="1"><img class="white-star" id="star1"
+              src="Assets/Images/whitestaricon.png" alt=""></button>
+          <button class="white-star-button" type="button" data-value="2"><img class="white-star" id="star2"
+              src="Assets/Images/whitestaricon.png" alt=""></button>
+          <button class="white-star-button" type="button" data-value="3"><img class="white-star" id="star3"
+              src="Assets/Images/whitestaricon.png" alt=""></button>
+          <button class="white-star-button" type="button" data-value="4"><img class="white-star" id="star4"
+              src="Assets/Images/whitestaricon.png" alt=""></button>
+          <button class="white-star-button" type="button" data-value="5"><img class="white-star" id="star5"
+              src="Assets/Images/whitestaricon.png" alt=""></button><br>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  </div>
+  <div class="Space">BLANK SPACE</div>
+</body>
+
+
+</html>
+<script>
+  var reportForm = document.getElementById("reportForm");
+  var reviewForm = document.getElementById("reviewForm");
+
+  var radioButtons = document.querySelectorAll('input[name="forms"]');
+
+  for (var i = 0; i < radioButtons.length; i++) {
+    radioButtons[i].addEventListener('click', function () {
+      if (this.value === 'report') {
+        reportForm.style.display = "block";
+        reviewForm.style.display = "none";
+      } else if (this.value === 'review') {
+        reviewForm.style.display = "block";
+        reportForm.style.display = "none";
+      }
+    });
+  }
+
+  const ratingContainer = document.querySelector(".rateBox");
+  const ratingStars = ratingContainer.querySelectorAll(".white-star");
+
+  let rate = 0;
+
+  ratingContainer.addEventListener("click", function (event) {
+    const starClicked = event.target;
+    if (!starClicked.classList.contains("white-star")) {
+      return;
+    }
+
+    rate = parseInt(starClicked.dataset.value);
+    document.getElementById("rate").innerHTML = `your rate ${rate}`;
+
+    ratingStars.forEach(function (star) {
+      if (parseInt(star.dataset.value) <= rate) {
+        star.src = "Assets/Images/yellowstar.png";
+      } else {
+        star.src = "Assets/Images/whitestaricon.png";
+      }
+    });
+  });
+
+
+
+</script>

@@ -1,0 +1,104 @@
+html{
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+form{
+display: flex;
+flex-direction: column;
+flex: 1;
+}
+form input{
+width: 200px;
+border: solid;
+border-color: green;
+border-radius: 5px;
+margin-bottom: 5px;
+
+  background-color: wheat;
+  color:green;
+}
+form input:invalid{
+  border-color: wheat;
+}
+form textarea{
+width: 400px;
+height:200px;
+  border-color: green;
+  background-color: wheat;
+  color:green;
+}
+form button{
+  margin-top:20px;
+  width: 200px;
+  height: 50px;
+  border: solid;
+  border-color:green;
+  background-color: wheat;
+  color:green;
+}
+form button:hover{
+    margin-top:20px;
+  width: 200px;
+  height: 50px;
+  border: solid;
+  border-color:wheat;
+  background-color: green;
+  color:wheat;
+  cursor:pointer;
+}
+.choose-form-box{
+  display: flex;
+  flex-direction: column;
+  
+}
+.choose-form-box:hover{
+    cursor:pointer;
+}
+.input-box-styling{
+  display: flex;
+  flex-direction: row;
+    border: solid;
+  border-color: green;
+  background-color: wheat;
+  color:green;
+  width:250px;
+  align-items: center;
+  height:50px;
+  margin-bottom: 10px;
+  border-radius: 0 25px 0 25px;
+}
+.input-box-styling:hover{
+
+  border-color: wheat;
+  background-color: green;
+  color:wheat;
+  width:250px;
+  align-items: center;
+  height:50px;  
+box-shadow:  3px 3px 3px #335533,
+             -3px -3px 3px #395f39;
+}
+
+.input-box-styling input{
+width: 30px;
+height:20px;
+accent-color:green;
+border-radius: 50%;
+}
+.white-star{
+  border: none;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.white-star-button{
+  border: none; 
+  background-color: n;
+}
+.rateBox{
+  display: flex;
+  flex: 1;
+  flex-direction:row;
+  align-items: center;
+}

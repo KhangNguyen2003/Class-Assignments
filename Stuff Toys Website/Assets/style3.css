@@ -1,0 +1,134 @@
+html {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  
+  background-image: url(Images/ash-pokemon.png),
+    url(Images/pngtree-green-apple-fruit-seamless-pattern-png-image_1299459.jpg);
+  background-position:right bottom, bottom ;
+  background-repeat: no-repeat, repeat;
+  background-size: contain, contain;
+  background-attachment: fixed;
+}
+
+@font-face{
+  font-family: 'Gloria';
+  src: url("Fonts/GloriaHallelujah-Regular.ttf");
+}
+@font-face{
+  font-family: 'Marck';
+  src: url("Fonts/MarckScript-Regular.ttf");
+}
+@font-face{
+  font-family: 'Neucha';
+  src: url("Fonts/Neucha-Regular.ttf");
+}
+@font-face{
+  font-family: 'RockSalt';
+  src: url("Fonts/RockSalt-Regular.ttf");
+}
+
+body{
+  font-size: 25px;
+  font-family: Neucha;
+  width: 950px;
+  margin-left: 80px;
+  margin-top: 20px; 
+}
+@media only screen and (max-width: 960px)  {
+  body{
+   margin-left: 0px;
+  }
+}
+
+h1{
+  margin:0px;
+  color: #d72828;
+  font-family: RockSalt;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: -3px -3px 0 #ffffff, 3px -3px 0 #ffffff, -3px 3px 0 #ffffff, 3px 3px 0 #ffffff;
+}
+
+h1+h3{
+  background-color: rgba(100,155,100,40%);
+  border-bottom:5px solid #006100;
+  border-left:5px solid #006100;
+  border-radius:50px 100px 50px 100px;
+  text-align: center;
+  margin:0px;
+  margin-bottom: 20px;
+  color: #00b336;
+  font-family: Gloria;
+  font-size:30px;
+  text-shadow: 1px 1px 1px #000000;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+
+span{
+  font-size: 35px;
+  text-transform: bold;
+  color:#ffdd00;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+nav ul{
+  padding:0px;
+  padding-left: 40px;
+  margin-bottom:0px;
+}
+nav ul li{
+  list-style: none; 
+  display: inline-block;
+  padding:10px;
+ 
+}
+nav ul li a:link, nav ul li a:visited{
+  padding: 0px 20px 0px 50px;
+  font-size: 25px;
+  background-color: #d68800;
+  border: 3px solid  #d68800;
+  border-bottom: 5px solid  #754a00;
+  border-left: 5px solid  #754a00;
+  border-radius: 0px 20px 0px 20px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+nav ul li a:hover, nav ul li a:active {
+  transition-duration: 0.5s;
+background-color: #a3ffbf;
+border: 3px solid #00ff4c;
+border-bottom: 5px solid #00b336;
+border-left: 5px solid #00b336;
+color: #005c1c;
+letter-spacing: 3px;
+}
+
+.Content{
+  margin-top:0px;
+  background-color: rgb(255, 255, 255,0.8);
+  background-image: url("Images/OA-139_Light_Wood_Texture_Board_LIGHTWOODTEXTUREBOARD.jpg") ;
+  border: 3px solid #754a00;
+  border-left: 10px solid #613d00;
+  border-bottom: 10px solid #613d00;
+  border-radius : 10px;
+  padding: 50px;
+  color: black;
+}
+
+.Space{
+  text-indent:-999999999999px;
+}
+
+.pokemon-background-section{
+  width: 700px;
+  height:500px;
+  border: solid yellow;
+  background-color: none;
+  background-repeat: none;
+  background-size: 80% 100%;
+  background-image: 
+  background-position:botton center,left center;
+}

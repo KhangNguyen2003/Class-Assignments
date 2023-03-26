@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> Appletun Plusie &#127823</title>
+  <link href="Assets/style2.css" rel="stylesheet" type="text/css" />
+  <script src="Assets/script.js" defer></script>
+  
+</head>
+
+<body>
+
+  <h1>Appletun Plushie</h1>
+  <h3>Special discount ends in: <span id="demo"></span></h3>
+  <nav>
+    <ul>
+      <li><a href="index.html">Main</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="ProductPage.html">Special Offer!</a></li>
+      <li><a href="ContactUs.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="Content">
+
+
+    <div class="GalleryBox">
+      <ul id="Gallery_Links">
+        <a href="Assets/Images/Ap1.jpg" title="He is Friend-shaped, i bet he makes good listener.">
+          <li></li>
+        </a>
+        <a href="Assets/Images/Ap2.jpg" title="Big, Chunky, Fluffy. Hugable to the max, what else could i ask for">
+          <li></li>
+        </a>
+        <a href="Assets/Images/Ap3.jpg" title="My life has change for the better ever since i have him!">
+          <li></li>
+        </a>
+      </ul>
+      <img id="GalleryIMG" src="Assets/Images/Ap1.jpg">
+
+    </div>
+    <p id="Caption">He is Friend-shaped, i bet he makes good listener.</p>
+
+
+    <h4>A brand new and absolutely darling new Appletun plushie has been announced!</h4>
+
+    <p>A supersweet Pokémon from the Galar region has moseyed on over in the form of one super-huggable plush! Featuring
+      a jumbo, lifelike size, this detailed Appletun plush is full of personality and ready to hang out in your room or
+      office!</p>
+
+    <h4>What are the Appletuns?</h4>
+    <div id="Apple2"></div>
+    <p>These adorable looking Applepie-shape creatures are from the region of Galar. An Grass Dragon type
+      pokemon.<br><br>
+      Yes they are Dragons! <br><br> More specifically they are wyrms that inhabited and grew inside an apple. From an
+      cute
+      little Applin, when they are fully evolved the apple becomes part of their body! Applins can either evol into a
+      Flapple or an Appletun depending on which apple they ate. Both are cool but we know which one is the cuter one
+      ;D<br> <br>
+
+      Appletun took the pokemon community by storm with their irresistabble cuteness. Their old apple which they lived
+      in now becomes their helmet, its leaf-like eyestalks usually droop down from under the apple helmet as
+      though they were ears, but may be lifted up to reveal small beady eyes. It has black slits for nostrils on the tip
+      of its muzzle. It has a large hump on its back with several overlapping stripes that resemble an apple pie's crust
+      on top, along with a pair of red and green leaves. It has four short, bulky legs with paws, and a stout tail.
+      <br>
+
+    <div id="Apple1"></div>
+
+    <h4>The Life-size Appletun!!</h4>
+    <p>For Limited time we are making a discount when purchasing your very own huggable Appletun!</p>
+    <p>This baby is a
+      life-sized one, which means plenty of surface area to cuddle and you can pretend that you're hugging the real
+      thing.</p>
+    <p> Measures about 21 ¾ inches tall and 17 ¾ inches wide. <br>
+      Big, round body looks like apple pie—or should we say "apple π"?
+    </p>
+
+    <h4>Sample Images Here</h4>
+    <div id="Gallery2">
+      <div id="GalleryIMG2">
+        <img class="IMG" src="Assets/Images/Ap4.jpg" width="" height="" alt="">
+        <img class="IMG" src="Assets/Images/Ap5.jpg" width="" height="" alt="">
+        <img class="IMG" src="Assets/Images/Ap6.jpg" width="" height="" alt="">
+        <img class="IMG" src="Assets/Images/Ap12.jpg" width="" height="" alt="">
+        <img class="IMG" src="Assets/Images/Ap7.jpg" width="" height="" alt="">
+        <img class="IMG" src="Assets/Images/Ap8.jpg" width="" height="" alt="">
+        <img class="IMG" src="Assets/Images/Ap9.jpg" width="" height="" alt="">
+        <img class="IMG" src="Assets/Images/Ap10.jpg" width="" height="" alt="">
+        <img class="IMG" src="Assets/Images/Ap11.jpg" width="" height="" alt="">
+      </div>
+    </div>
+
+    <p>
+      More Details: </p>
+
+    <ul>
+      <li>Item Dimensions: 17.8 x 21.8 IN</li>
+      <li>Country Of Origin: Made in China</li>
+      <li>Materials: All new material / polyester / polyurethane foam / polyurethane</li>
+      <li>Care Instructions: Surface Wash Only</li>
+      <li>Recommended Age: 4+ Years</li>
+      <li>Item Weight: 4.3 LB</li>
+      <li>Only for 90.99$</li>
+    </ul>
+
+    <button>ORDER ONE NOW!</button>
+    <script>
+      var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+      var x = setInterval(function () {
+
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+  </div>
+
+  <div class="Space">BLANK SPACE</div>
+</body>
+
+</html>
