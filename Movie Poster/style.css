@@ -1,0 +1,189 @@
+html, body {
+  height: 100%;
+  width: 100%;
+
+background-color: #c7241f;
+  
+background-image: url("img/Girl.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position-x: 50px;
+overflow-x: hidden; 
+ 
+}
+
+div{
+  color: #e0c01f;
+  font-size: 2em;
+  font-weight: 10px;
+  font-family: Copperplate,fantasy,  sans-serif;
+ 
+}
+
+div#Winner{
+  position: fixed;
+  top: 0px;
+  background-color:  #c7241f;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  width: 1900px;
+}
+
+div#Title{
+  position: relative;
+  font-size: 80px;
+  top: 0px;
+  left: 90px;
+  text-shadow: 10px 5px 5px black;
+}
+
+div#Queen{
+  position: relative;
+  font-size: 40px;
+  font-family: "Brush Script MT", cursive , serif;
+  top: -15px;
+  left: 110px;
+  width: 370px;
+  text-align: center;
+  border-bottom: 2px solid #e0c01f ;
+}
+
+div#PULP {
+  position: absolute;
+  top: 120px;
+  right: 110px;
+  padding : 15px;
+  width: 200px;
+  height : 430px;
+  text-shadow: 1px 2px 2px black;
+  font-size: 22px;
+  font-weight: 10px;
+  font-family: Papyrus,  fantasy, sans-serif;
+
+  background-color: #c7241f;
+  box-shadow: 5px 10px;
+}
+
+div#Name{
+  position: relative;
+  left: 130px ;
+  width: 300px;
+  text-align: center;
+  line-height: 15px;
+  border-top: 2px solid #e0c01f;
+  border-bottom: 2px solid #e0c01f;
+}
+
+div#by{
+  position: relative;
+  left: 130px ;
+  width: 300px;
+  text-align: center;
+  font-size: 30px;
+  font-family:"Brush Script MT", cursive , serif ;
+  line-height: 5px;
+}
+
+p#and{
+ font-size: 20px; 
+  line-height : 0px;
+}
+div#img{
+  position: relative;
+  left: 130px;
+  filter: invert(100%);
+  margin-top: 10px;
+}
+
+div#copyright{
+  position: relative;
+  font-size: 15px;
+  color: #e0c01f ;
+  font-family: "Brush Script MT", cursive , serif ;
+  left: 130px ;
+  text-align: center;
+  width: 300px;
+}
+
+div#dime{
+  position: absolute;
+  bottom: -105px;
+  right: -80px;
+  scale: 15%;
+  transform: rotate(-20deg);
+}
+
+div#roll{
+  position: absolute;
+  bottom: -140px;
+  right: -25px;
+  scale: 8%;
+}
+
+div#Overview{
+  text-indent: 10px;
+  margin-top: 20px;
+  position: relative;
+  left: 90px ;
+  width: 400px;
+  height: 250px;
+  text-align: justify;
+  font-size: 20px;
+  font-family: Copperplate,fantasy,  sans-serif ;
+  text-shadow: 1px 2px black;
+  border-bottom: solid 2px #e0c01f; 
+  border-top: solid 2px #e0c01f; 
+}
+
+div p#O{
+  font-size: 25px;
+  text-align: center;
+}
+
+.Reviews{
+  text-indent: 10px;
+  margin-top: 20px;
+  position: relative;
+  left: 90px ;
+  width: 400px;
+  height: 590px;
+  text-align: left;
+  font-size: 20px;
+  font-family: Copperplate,fantasy,  sans-serif ;
+  text-shadow: 1px 2px black;
+  border-bottom: solid 2px #e0c01f; 
+}
+
+strong{
+  font-size: 20px;
+  color: #00d100;
+}
+
+#R{
+  font-size: 25px;
+  text-align: center;
+}
+
+#hidden{
+  opacity : 0%;
+}
+
+  a{
+    text-decoration: none;
+    color :#e0c01f;
+  }
+
+a:hover{
+    color: #00d100;
+    font-size: 35px;
+}
+
+blockquote{
+  font-style : italic ;
+  font-size: 18px;
+}
+
+em{
+  font-size: 20px;
+}

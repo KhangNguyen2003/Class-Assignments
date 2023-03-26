@@ -1,0 +1,250 @@
+html{
+  background-image: url("Images/pattern4.jpg");
+  color: #ffffff;
+  transition-duration: 1s;
+}
+
+svg {
+  width: 500px;
+  height: 600px;
+  position: fixed;
+  left: -250px;
+  bottom: -30px;
+}
+
+#label {
+  fill: white;
+}
+text{
+  font-size: 17px;
+}
+@keyFrames spin {
+  100%{transform: rotate(360deg);}
+}
+
+#record {
+  transform-origin: center center;
+  animation: spin 4s linear infinite;
+}
+
+.line {
+  stroke: white;
+}
+marquee {
+  position: fixed;
+  top:0px;
+  left:0px;
+  font-size: 25px;
+  text-align: center;
+  background-color:#c7c7c7;
+  color:white;
+  height: 40px;
+  z-index: 1;
+  transition-duration: 1s;
+  font-family: "Lucida Handwriting", cursive;
+}
+marquee:hover{ 
+  background-color:#ebd22d;
+}
+
+body{
+  background-color: #858585;
+  position: relative;
+  display: block;
+  left: 380px;
+  top: 85px;
+  border: 10px double #c7c7c7;
+  width: 920px;
+  padding: 40px;
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 30px;
+  font-family: Garamond, serif;
+  margin-bottom : 50px;
+}
+
+img.yellow{
+  filter: grayscale(100%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition-duration: 0.6s;
+  border-radius: 50%;
+  z-index: -1 ;
+}
+
+img#face{
+  height: 300px;
+  width:270px;
+  float: left;
+  border: 2px solid white;
+  border-bottom: 8px solid #c7c7c7;
+  border-right: 8px solid #c7c7c7;
+  margin-right: 20px;
+  margin-bottom: 20px; 
+  border-radius: 12px ;
+}
+
+li{
+   list-style-type: none;
+   font-size: 35px;
+   font-family: "Lucida Handwriting", cursive;
+}
+img.right{
+  filter: grayscale(100%);
+  transition-duration: 0.6s;
+  border-radius: 50%;
+  float:right;
+  height: 200px;
+  width: 150px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+img.left{
+  filter: grayscale(100%);
+  transition-duration: 0.6s;
+  border-radius: 50%;
+  float:left;
+  height: 200px;
+  width: 150px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+img:hover{
+  filter: hue-rotate(360deg);
+  border-radius: 12px ;
+}
+.decorLines{
+  border-top:2px solid #c7c7c7;
+  width: 500px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-top: 20px;
+}
+.titles{
+  border-left: 12px dotted;
+  color: #ebd22d;
+  transition-duration: 0.6s;
+  text-align: center;
+  font-family: "Lucida Handwriting", cursive;
+}
+
+button{
+background-color:#c7c7c7;
+cursor: pointer;  
+border: none;
+text-align: center;
+font-size: 15px;
+font-family: "Lucida Handwriting", cursive;
+padding: 10px 10px;
+transition-duration: 0.2s; 
+border-radius: 12px;
+}
+button:hover{
+  background-color: #ebd22d;
+  filter:drop-shadow(-2px 8px 10px #766704);
+}
+
+#B1{
+position: fixed;
+left: 70px;
+bottom: 450px;
+}
+
+#B2{
+position: fixed;
+left: 125px;
+bottom: 330px;
+}
+
+#B3{
+position: fixed;
+left: 125px;
+bottom: 190px;
+}
+
+#B4{
+position: fixed;
+left: 55px;
+bottom: 50px;
+}
+
+a.PersonLink{
+  text-decoration: none;
+  color: #ffdd00;
+  transform-duration: 0.2s;
+}
+
+a.PersonLink:hover{
+ color: #ff5900;
+}
+
+footer a{
+  text-decoration: none;
+  color: #ffdd00;
+  font-family: "Lucida Handwriting", cursive;
+  font-size: 20px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover{
+  text-decoration: underline;
+  color: #ff5900;
+  font-size: 21px;
+}
+
+#logo{
+  position: fixed;
+  left: 120px;
+  top: 50px; 
+  filter:drop-shadow(5px 5px 10px #fdff94);
+}
+
+.iframe-container{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+}
+.iframe-container iframe{
+  border:5px solid #c7c7c7;
+  border-bottom: 15px solid;
+  border-right: 5px solid;
+  margin-right: 5px;
+  transition-duration: 0.4s;
+}
+
+.iframe-container iframe:hover{
+  border:5px solid #ebd22d;
+  border-bottom: 15px solid #9e8a05;
+  border-right: 5px solid #9e8a05;
+}
+
+.ASax{
+  display: flex;
+}
+
+.blank{
+  display: hidden;
+  opacity: 0%;
+}
+
+.Asax > img{
+  margin-left: 50px;
+  filter: grayscale(100%);
+  transition-duration: 0.6s;
+  border-radius: 50%;
+}
+.Asax > img:hover{
+  filter: hue-rotate(30deg);
+  border-radius: 12px ;
+}
+
+strong{
+  color:#ebd22d;
+}
